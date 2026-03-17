@@ -14,3 +14,4 @@ paddlepaddle
 pandas==2.2.3
 pytest==8.3.4
 httpx==0.28.1
+python-3.10.13
