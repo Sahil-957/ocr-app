@@ -1,0 +1,57 @@
+How to run this project
+
+1. Open the project folder on your computer.
+
+2. Start the backend first.
+Open a terminal in the project folder and run:
+cd backend
+.venv\Scripts\activate
+python -m uvicorn app.main:app --host 127.0.0.1 --port 8000
+
+3. Keep the backend terminal open while using the project.
+
+4. Start the frontend next.
+Open a second terminal in the project folder and run:
+cd frontend
+npm run dev
+
+5. Keep the frontend terminal open as well.
+
+6. Open the frontend link in your browser.
+Use this address:
+http://127.0.0.1:5173
+
+7. Sign in with the default admin account.
+Username is admin.
+Password is admin123.
+
+8. Create a batch from the dashboard.
+
+9. Upload the folder that contains the costing images.
+
+10. Start extraction and wait for processing to complete.
+
+11. Refresh the batch status if needed.
+
+12. Review the extracted rows if required.
+
+13. Export the Excel file once the batch is complete.
+
+Important notes
+
+- Python 3.11 should be used for the backend.
+- The backend must be running before login works.
+- The frontend and backend should both stay open while testing locally.
+- If the page shows old styles or old data, do a hard refresh in the browser.
+
+If running for the first time
+
+Backend first-time setup:
+cd backend
+py -3.11 -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+
+Frontend first-time setup:
+cd frontend
+npm install
